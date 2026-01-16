@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "batch15.coms"
+    region = "us-east-1"
+    key = "tfstate"
+    
+  }
+}
 provider "aws" {
   region = "us-east-1"
   
